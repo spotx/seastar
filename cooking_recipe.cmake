@@ -260,6 +260,7 @@ set (dpdk_args
   T=${dpdk_quadruple})
 
 cooking_ingredient (dpdk
+  REQUIRES numactl
   EXTERNAL_PROJECT_ARGS
     SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/dpdk
     CONFIGURE_COMMAND
